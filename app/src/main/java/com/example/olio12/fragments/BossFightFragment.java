@@ -63,15 +63,15 @@ public class BossFightFragment extends Fragment {
         };
 
         GameManager.getInstance().setLatestMonster(bossMonster);
-        updateMonsterView(BossText, BossImage);
+        updateBossView(BossText, BossImage);
 
         AttackBossButton.setOnClickListener(v -> {
             GameManager.getInstance().getPlayer().attack(GameManager.getInstance().getLatestMonster());
-            updateMonsterView(BossText, BossImage);
+            updateBossView(BossText, BossImage);
         });
         return view;
     }
-    private void updateMonsterView(TextView nameView, ImageView imageView) {
+    private void updateBossView(TextView nameView, ImageView imageView) {
         Monster currentMonster = GameManager.getInstance().getLatestMonster();
         if (currentMonster != null) {
             nameView.setText(currentMonster.getName() + ": " + currentMonster.getLife() + " / " + currentMonster.getMaxLife());

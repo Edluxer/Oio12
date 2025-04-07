@@ -20,7 +20,7 @@ public class MainActivity extends AppCompatActivity {
 
 
     }
-    public void FightMonsterActivityChange(View view) {
+    public void FightMonstersActivityButton(View view) {
         Intent intent = new Intent(this, FightMonstersActivity.class);
         startActivity(intent);
     }
