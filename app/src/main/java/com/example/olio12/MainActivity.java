@@ -3,6 +3,7 @@ package com.example.olio12;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -17,6 +18,8 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         gameManager = GameManager.getInstance();
         playerScoreText = findViewById(R.id.PlayerScoreText);
+
+        Button FightMonsterActivityButton = findViewById(R.id.FightMonsterActivityButton);
 
     }
     public void FightMonsterActivityButton(View view) {
