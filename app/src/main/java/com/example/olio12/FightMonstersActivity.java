@@ -61,10 +61,8 @@ public class FightMonstersActivity extends AppCompatActivity {
         Button bossButton = findViewById(R.id.BossFightFragmentButton);
         if (GameManager.getInstance().getPlayer().getScore() >= 100) {
             bossButton.setEnabled(true);
-            BossFightFragment.setEnabled(true);
         } else {
             bossButton.setEnabled(false);
-            BossFightFragment.setEnabled(false);
         }
     }
 
