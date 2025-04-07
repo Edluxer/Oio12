@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.ShowMonsterFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <ImageView
+        android:id="@+id/MonsterImage"
+        android:layout_width="230dp"
+        android:layout_height="190dp"
+        android:layout_gravity="top|center"
+        android:src="@android:drawable/btn_star_big_on" />
+
+    <Button
+        android:id="@+id/AttackMonsterButton"
+        android:layout_width="230dp"
+        android:layout_height="90dp"
+        android:layout_gravity="center_horizontal|center_vertical"
+        android:backgroundTint="#801111"
+        android:text="Hyökkää!" />
+
+    <TextView
+        android:id="@+id/MonsterNameText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:layout_gravity="center_horizontal|center_vertical"
+        android:layout_marginBottom="90dp"
+        android:textSize="20sp"/>
+
+    <TextView
+        android:id="@+id/MonsterLifeText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|center_vertical"
+        android:layout_marginBottom="60dp"
+        android:text="TextView"
+        android:textSize="20sp" />
+
+</FrameLayout>
